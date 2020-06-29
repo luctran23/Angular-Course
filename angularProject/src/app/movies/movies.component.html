@@ -1,10 +1,6 @@
-<p>Movie's details: </p>
-<div><span>id: </span>{{ movie.id}}</div>
-<div><span>name:  </span>{{ movie.name}}</div>
-<div><span>release year:  </span>{{ movie.releaseYear}}</div>
-<h2>Edit your information</h2>
-<div>
-    <label> Movie name:
-        <input [ngModel]="movie.name" placeholder="Enter movie's name">
-    </label>
-</div>
+<h2>My favorite movie</h2>
+<ol>
+    <li *ngFor="let eachMovie of movies">
+        {{eachMovie.name}}
+    </li>
+</ol>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Movie } from '../../models/movie';
+import { fakeMovies } from '../fake-movies';
+
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -11,6 +13,8 @@ export class MoviesComponent implements OnInit {
     name: "Star war",
     releaseYear: 2010 
   }
+  movies = fakeMovies;
+  
   constructor() { }
 
   ngOnInit(): void {
